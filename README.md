@@ -2,7 +2,7 @@
 
 这是一个非常简单的测试框架，帮助我们测试一些UI相关的用例，通常情况下我们使用Junit编写单元测试只是针对没有界面的非UI用例，而对于和界面相关的逻辑操作测试起来就不太方便，比如我只想看看这个界面的运行效果，看看界面的布局是否达到预期 Junit就满足不了我们的要求。通常我们不得不创建一个很小的demo来演示我们的界面，那么UITestRunner就是帮助android开发者解决类似的问题的，其实他就是你需要的那个很小的demo,只是他更加方便的以类似JUnitTest的方式把你的所有用例组织起来（你只要写一个以“test"开头的方法即可），并且把这些用例以列表的方式显示出来，测试其中一个用例，只需要点击列表项即可。
 
-![测试套件列表](./images/UITestRnnner-TestSuite.png)  ![测试用例列表](./images/UITestRunner-TestCase.png)
+![测试套件列表](./images/UITestRnnner-TestSuite.png)  ![测试用例列表](./images/UITestRunner-testCase.png.png)
 
 
 
