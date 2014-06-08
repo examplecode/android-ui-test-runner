@@ -31,7 +31,7 @@ UITestRunner 是以lib类型的工程存在，我们必须设置我们的项目�
 
 在你自己项目的AndroidManifest.xml中添加以下内容声明UITestActivity(测试用例的展示界面)
 
-```
+``` xml
     <activity android:name="com.mmbox.uitestrunner.UITestActivity">
         <intent-filter>
             <action android:name="com.mmbox.uitestrunner.Main" />
