@@ -22,5 +22,5 @@ public class MySampleTestSuite2 extends UITestSuite {
 		Toast.makeText(getContext(), "testCase2InTestSuite2 is runnning ",Toast.LENGTH_SHORT).show();
 	}
 	
-
+ 
 }

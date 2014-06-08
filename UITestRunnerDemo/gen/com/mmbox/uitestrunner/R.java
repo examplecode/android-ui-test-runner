@@ -8,7 +8,7 @@ package com.mmbox.uitestrunner;
 
 public final class R {
 	public static final class id {
-		public static final int menu_settings = 0x7f070000;
+		public static final int menu_settings = 0x7f070004;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f050000;

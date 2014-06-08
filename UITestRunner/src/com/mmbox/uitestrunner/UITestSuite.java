@@ -29,17 +29,23 @@ public class UITestSuite extends FrameLayout {
 		setupListView();
 	}
 	
-	/**
-	 * 显示一个测试视图,通常用于显示一个视图的布局效果
-	 * @param view
-	 */
-	public void showTestView(View view) {
+	
+	protected void showView(View v) {
+//		FrameLayout rootContainer =  (FrameLayout) getParent();
+		View parent = (View) getParent();
+		if(parent instanceof TestSuiteContainer) {
+			TestSuiteContainer container = (TestSuiteContainer) parent;
+			container.addView(v);		
+		} else {
+			throw new IllegalStateException("the view parent must be TestSuiteContainer");
+		}
+		
 	}
 	
-	public void showTestView(View view,ViewGroup.LayoutParams lp) {
-	}
-	
-	public void showTestView(int resid) {
+	protected void showLayout(int resId) 
+	{
+		View v = View.inflate(getContext(), resId, null);
+		showView(v);
 	}
 	
 	

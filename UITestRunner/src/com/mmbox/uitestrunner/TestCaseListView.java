@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -102,7 +103,8 @@ public abstract class TestCaseListView extends ListView {
 		public long getItemId(int arg0) {
 			return arg0;
 		}
-
+		
+		 
 		public View getView(int position, View convertView, ViewGroup parent) {
 //			TextView tv = new TextView(mContext);
 //			tv.setText(getItemName(mViewClasses.get(position).getName()));
