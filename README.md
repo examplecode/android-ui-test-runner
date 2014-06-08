@@ -110,10 +110,31 @@ UITestRunner 是以lib类型的工程存在，我们必须设置我们的项目�
 
 ### 显示一个view实例
 
+``` java
+
+    public void testShowSimpleButton() {
+        Button btn = new Button(getContext());
+        btn.setText("Click Me");
+        btn.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        showView(btn);
+    }
+
+```
+
+![测试显示一个Button](./images/test_view.png)
 
 
 ### 显示一个布局文件
 
+``` java
+
+    public void testShowSimpleLayout() {
+        showLayout(R.layout.show_layout_demo);
+    }
+
+```
+
+![测试显示一个布局文件](./images/test_layout.png)
 
 
 

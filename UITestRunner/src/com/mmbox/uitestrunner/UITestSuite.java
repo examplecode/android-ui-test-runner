@@ -31,11 +31,14 @@ public class UITestSuite extends FrameLayout {
 	
 	
 	protected void showView(View v) {
-//		FrameLayout rootContainer =  (FrameLayout) getParent();
 		View parent = (View) getParent();
 		if(parent instanceof TestSuiteContainer) {
-			TestSuiteContainer container = (TestSuiteContainer) parent;
-			container.addView(v);		
+			TestSuiteContainer root = (TestSuiteContainer) parent;
+			FrameLayout wrapContainer = new FrameLayout(getContext());
+			wrapContainer.setBackgroundColor(Color.WHITE);
+			wrapContainer.addView(v);
+			root.addView(wrapContainer);		
+
 		} else {
 			throw new IllegalStateException("the view parent must be TestSuiteContainer");
 		}
